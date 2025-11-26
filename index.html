@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookHaven - Online Bookstore</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>
+            <span class="logo-emoji">📚</span>
+            BookHaven
+        </h1>
+        <p>Your Premier Online Bookstore Experience</p>
+    </div>
+
+    <div class="container">
+        <!-- Add Book Form -->
+        <div class="card">
+            <h2 class="card-title">
+                <div class="icon">➕</div>
+                Add New Book
+            </h2>
+
+            <div class="success-message" id="successMessage">
+                Book added successfully! 🎉
+            </div>
+
+            <form id="addBookForm">
+                <div class="form-group" id="titleGroup">
+                    <label for="title">Book Title *</label>
+                    <input type="text" id="title" name="title" placeholder="Enter book title..." required>
+                    <div class="error-message" id="titleError">Please enter a valid book title</div>
+                </div>
+
+                <div class="form-group" id="authorGroup">
+                    <label for="author">Author *</label>
+                    <input type="text" id="author" name="author" placeholder="Enter author name..." required>
+                    <div class="error-message" id="authorError">Please enter the author's name</div>
+                </div>
+
+                <div class="form-group" id="priceGroup">
+                    <label for="price">Price ($) *</label>
+                    <input type="number" id="price" name="price" step="0.01" min="0" placeholder="0.00" required>
+                    <div class="error-message" id="priceError">Please enter a valid price</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="category">Category</label>
+                    <select id="category" name="category">
+                        <option value="">Select Category</option>
+                        <option value="Fiction">Fiction</option>
+                        <option value="Non-Fiction">Non-Fiction</option>
+                        <option value="Science Fiction">Science Fiction</option>
+                        <option value="Mystery">Mystery</option>
+                        <option value="Romance">Romance</option>
+                        <option value="Biography">Biography</option>
+                        <option value="History">History</option>
+                        <option value="Technology">Technology</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="submit-btn" id="submitBtn">
+                    <span class="spinner" id="spinner"></span>
+                    <span id="btnText">Add Book to Store</span>
+                </button>
+            </form>
+        </div>
+
+        <!-- Book List -->
+        <div class="card">
+            <h2 class="card-title">
+                <div class="icon">📖</div>
+                Book Collection
+            </h2>
+
+            <div class="stats">
+                <div class="stat-item">
+                    <div class="stat-number" id="totalBooks">0</div>
+                    <div class="stat-label">Total Books</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" id="totalValue">$0</div>
+                    <div class="stat-label">Total Value</div>
+                </div>
+            </div>
+
+            <div class="books-grid" id="booksGrid">
+                <div class="empty-state">
+                    <div class="icon">📚</div>
+                    <h3>No Books Yet</h3>
+                    <p>Start building your collection by adding your first book!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="floating-action" onclick="scrollToTop()" title="Scroll to top">
+        ⬆️
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
