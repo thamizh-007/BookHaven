@@ -33,7 +33,7 @@ JavaScript (ES6)	Dynamic interactions & logic
 🧪 Live Demo (Optional)
 
 If hosted, place the link here:
-👉 https://your-username.github.io/bookhaven/
+👉 https://thamizh-007.github.io/BookHaven/
 
 📌 Project Screenshot
 
