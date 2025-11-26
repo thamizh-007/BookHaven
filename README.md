@@ -1,4 +1,4 @@
-📘 BookHaven – Book Ledger Web Application (Prototype)
+#📘 BookHaven – Book Ledger Web Application (Prototype)
 
 BookHaven is a modern Book Ledger Web Application prototype built using
 HTML, CSS, Bootstrap, and JavaScript.
