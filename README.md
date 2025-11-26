@@ -59,7 +59,7 @@ This prototype can be transformed into a full-featured application by adding:
 
 Clone the repository:
 
-git clone https://github.com/your-username/bookhaven.git
+git clone https://github.com/thamizh-007/bookhaven.git
 
 
 Open the project folder.
